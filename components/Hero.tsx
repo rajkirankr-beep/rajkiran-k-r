@@ -31,7 +31,7 @@ export default function Hero() {
               {/* Placeholder graphic — replace src with /portrait.jpg once you add a real photo to /public */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/portrait.svg"
+                src="/profile.png"
                 alt={profile.portraitAlt}
                 className="absolute inset-0 h-full w-full object-cover grayscale contrast-125"
               />
@@ -51,9 +51,8 @@ export default function Hero() {
                   <span className="absolute inline-flex h-full w-full animate-blink rounded-full bg-accent" />
                 )}
                 <span
-                  className={`relative inline-flex h-2 w-2 rounded-full ${
-                    profile.isAvailable ? "bg-accent" : "bg-muted"
-                  }`}
+                  className={`relative inline-flex h-2 w-2 rounded-full ${profile.isAvailable ? "bg-accent" : "bg-muted"
+                    }`}
                 />
               </span>
               <span className="font-mono text-[11px] uppercase tracking-wider text-ink/90">

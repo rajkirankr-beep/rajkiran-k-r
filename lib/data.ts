@@ -111,7 +111,7 @@ export const projects: Project[] = [
       "A browser-based Wordle-style game built to practice JavaScript, DOM manipulation, game logic, and interactive UI development.",
     stack: ["HTML", "CSS", "JavaScript"],
     href: "https://github.com/",
-    size: "sm",
+    size: "md",
   },
 ];
 
