@@ -101,22 +101,22 @@ export const projects: Project[] = [
       "An automated pipeline that generates short-form videos using AI scripts, text-to-speech, captions, stock footage, and programmatic video assembly.",
     stack: ["Python", "Gemini", "Edge-TTS", "Whisper", "MoviePy"],
     href: "https://github.com/",
-    size: "lg",
+    size: "md",
   },
   {
     index: "04",
-    title: "Wordle Clone",
+    title: "LMSprint",
     year: "2026",
     description:
-      "A browser-based Wordle-style game built to practice JavaScript, DOM manipulation, game logic, and interactive UI development.",
+      "A browser extension that enables selective bulk downloading of PDFs and PowerPoint presentations (PPT, PPTX) from IIIT Kottayam LMS using your authenticated session.",
     stack: ["HTML", "CSS", "JavaScript"],
     href: "https://github.com/",
-    size: "md",
+    size: "lg",
   },
 ];
 
 export const socials = [
   { label: "GitHub", href: "https://github.com/rajkirankr-beep" },
   { label: "LinkedIn", href: "https://linkedin.com/" },
-  { label: "Instagram", href:"https://www.instagram.com/ra._.kiran/"}
+  { label: "Instagram", href: "https://www.instagram.com/ra._.kiran/" }
 ];
