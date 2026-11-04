@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Rubik } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,6 +16,13 @@ const jbMono = JetBrains_Mono({
   display: "swap",
 });
 
+const rubik = Rubik({
+  subsets: ["latin"],
+  weight: ["800", "900"],
+  variable: "--font-rubik",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Rajkiran K R — Software Engineer",
   description:
@@ -24,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jbMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${jbMono.variable} ${rubik.variable}`}>
       <body className="relative min-h-screen bg-base font-display antialiased">
         <div className="grain-overlay bg-grain" aria-hidden="true" />
         <div className="relative z-10">{children}</div>

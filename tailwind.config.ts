@@ -17,6 +17,7 @@ const config: Config = {
       fontFamily: {
         display: ["var(--font-inter)", "system-ui", "sans-serif"],
         mono: ["var(--font-jbmono)", "ui-monospace", "monospace"],
+        rounded: ["var(--font-rubik)", "var(--font-inter)", "system-ui", "sans-serif"],
       },
       fontSize: {
         hero: ["clamp(3.25rem, 9vw, 9rem)", { lineHeight: "0.88", letterSpacing: "-0.03em" }],

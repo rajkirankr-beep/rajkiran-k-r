@@ -33,7 +33,7 @@ export default function Hero() {
               <img
                 src="/profile.png"
                 alt={profile.portraitAlt}
-                className="absolute inset-0 h-full w-full object-cover grayscale contrast-125"
+                className="absolute inset-0 h-full w-full object-cover "
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-base/80 via-transparent to-transparent" />
             </div>
