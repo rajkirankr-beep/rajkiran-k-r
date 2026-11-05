@@ -205,7 +205,7 @@ export default function IntroHero() {
       /* ── PER-LETTER STATE ───────────────────────────────────────── */
 
       type LS = LayoutItem & {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        
         body: any;                    // matter-js Body
         returning: boolean;           // true while spring-returning to home
         strip: number[];              // jelly: x-offset of each horizontal slice
