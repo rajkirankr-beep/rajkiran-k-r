@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Rubik } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+const inter = localFont({
+  src: "../public/fonts/Inter.ttf",
   variable: "--font-inter",
   display: "swap",
+  weight: "100 900",
 });
 
 const jbMono = localFont({
@@ -17,11 +16,11 @@ const jbMono = localFont({
   weight: "100 800",
 });
 
-const rubik = Rubik({
-  subsets: ["latin"],
-  weight: ["800", "900"],
+const rubik = localFont({
+  src: "../public/fonts/Rubik.ttf",
   variable: "--font-rubik",
   display: "swap",
+  weight: "300 900",
 });
 
 export const metadata: Metadata = {
