@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/matter-js": "^0.20.2",
+    "@vercel/analytics": "^2.0.1",
     "framer-motion": "^11.3.19",
     "lucide-react": "^0.417.0",
     "matter-js": "^0.20.0",

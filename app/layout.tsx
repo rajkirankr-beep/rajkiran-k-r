@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Rubik } from "next/font/google";
+import { Inter, Rubik } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const inter = Inter({
@@ -9,11 +10,11 @@ const inter = Inter({
   display: "swap",
 });
 
-const jbMono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
+const jbMono = localFont({
+  src: "../public/fonts/JetBrainsMono.ttf",
   variable: "--font-jbmono",
   display: "swap",
+  weight: "100 800",
 });
 
 const rubik = Rubik({
@@ -29,9 +30,16 @@ export const metadata: Metadata = {
     "Portfolio and resume of Rajkiran K R, a software engineer building systems in C, Java, PHP, and the web.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className={`${inter.variable} ${jbMono.variable} ${rubik.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${jbMono.variable} ${rubik.variable}`}
+    >
       <body className="relative min-h-screen bg-base font-display antialiased">
         <div className="grain-overlay bg-grain" aria-hidden="true" />
         <div className="relative z-10">{children}</div>
