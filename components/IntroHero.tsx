@@ -2,11 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
-import { Rubik } from "next/font/google";
+import localFont from "next/font/local";
 
-/* Load Rubik 900 at module level — canvas needs the font-family string */
-const rubik = Rubik({ subsets: ["latin"], weight: "900", display: "swap" });
-
+/* Load Rubik at module level — canvas needs the font-family string */
+const rubik = localFont({
+  src: "../public/fonts/Rubik.ttf",
+  weight: "300 900",
+  display: "swap",
+});
 /* ══ EDIT THESE ════════════════════════════════════════════════════════ */
 
 /** One string per line. Each line expands to fill the window width. */
