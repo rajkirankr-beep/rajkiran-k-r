@@ -1,4 +1,3 @@
-
 // Edit this file to swap in your own name, copy, links, and projects.
 // Nothing below touches layout or styling — it's pure content.
 
@@ -13,7 +12,7 @@ export const profile = {
 };
 
 export const heroMetrics = [
-  { label: "Active projects", value: "03" },
+  { label: "Active projects", value: "06" },
   { label: "Core languages", value: "07" },
   { label: "Current GPA", value: "9.3" },
 ];
@@ -32,33 +31,33 @@ export const techStack = [
   },
   {
     tag: "DEV.02",
-    name: "Flutter",
-    note: "Cross-platform mobile development",
+    name: "Next.js",
+    note: "App Router, PWAs & full-stack web apps",
   },
   {
     tag: "DEV.03",
     name: "Python",
-    note: "Automation, AI & scripting",
+    note: "Automation, AI & media pipelines",
   },
   {
     tag: "DEV.04",
-    name: "Java",
-    note: "OOP, application development",
+    name: "TypeScript",
+    note: "Type-safe frontend & backend systems",
   },
   {
     tag: "DEV.05",
-    name: "C",
+    name: "C / C++",
     note: "DSA, memory & systems fundamentals",
   },
   {
     tag: "DEV.06",
     name: "JavaScript",
-    note: "Web interactions & application logic",
+    note: "Web interactions, extensions & algorithms",
   },
   {
     tag: "DEV.07",
-    name: "Firebase",
-    note: "Backend services & application data",
+    name: "Supabase & Firebase",
+    note: "Auth, databases & cloud deployment",
   },
 ];
 
@@ -75,48 +74,68 @@ export type Project = {
 export const projects: Project[] = [
   {
     index: "01",
-    title: "Gym Tracker",
+    title: "find my professor",
     year: "2026",
     description:
-      "A React-based gym tracking application for managing workouts, exercises, progress, and training data through a clean dashboard.",
-    stack: ["React", "JavaScript", "CSS"],
-    href: "https://github.com/",
+      "Mobile-first web app for IIIT Kottayam combining faculty timetables, campus network context, and crowdsourced student check-ins to track live cabin availability.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+    href: "https://github.com/rajkirankr-beep",
     size: "lg",
   },
   {
     index: "02",
-    title: "ClosetAI",
+    title: "Lyric Flow",
     year: "2026",
     description:
-      "A Flutter fashion application exploring AI-assisted outfit discovery and digital wardrobe management.",
-    stack: ["Flutter", "Dart", "Firebase"],
-    href: "https://github.com/",
+      "Automated Python and Remotion pipeline that clips audio hooks, transcribes word-level timestamps with local Whisper, and renders Spotify-style kinetic lyric videos.",
+    stack: ["Python", "React", "Remotion", "OpenAI Whisper"],
+    href: "https://github.com/rajkirankr-beep",
     size: "md",
   },
+  // {
+  //   index: "03",
+  //   title: "Exam Study Tracker PWA",
+  //   year: "2026",
+  //   description:
+  //     "Installable dark-mode study planner built with Next.js, TypeScript, and Supabase that calculates daily revision targets and tracks course progress.",
+  //   stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+  //   href: "https://github.com/rajkirankr-beep",
+  //   size: "md",
+  // },
+  // {
+  //   index: "04",
+  //   title: "Gym Tracker",
+  //   year: "2026",
+  //   description:
+  //     "Full-stack React workout log with Firebase authentication, progressive overload tracking, 1-Rep Max estimation, and customizable training splits.",
+  //   stack: ["React", "JavaScript", "Firebase", "Firestore"],
+  //   href: "https://github.com/rajkirankr-beep",
+  //   size: "lg",
+  // },
   {
     index: "03",
-    title: "Shorts Automation",
+    title: "LMSprint",
     year: "2026",
     description:
-      "An automated pipeline that generates short-form videos using AI scripts, text-to-speech, captions, stock footage, and programmatic video assembly.",
-    stack: ["Python", "Gemini", "Edge-TTS", "Whisper", "MoviePy"],
-    href: "https://github.com/",
+      "Browser extension for bulk-downloading PDFs and lecture decks directly from the IIIT Kottayam LMS using an active authenticated session.",
+    stack: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
+    href: "https://github.com/rajkirankr-beep",
     size: "md",
   },
   {
     index: "04",
-    title: "LMSprint",
+    title: "Wordlead",
     year: "2026",
     description:
-      "A browser extension that enables selective bulk downloading of PDFs and PowerPoint presentations (PPT, PPTX) from IIIT Kottayam LMS using your authenticated session.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    href: "https://github.com/",
-    size: "lg",
+      "Client-side HTML5/JavaScript word puzzle game powered by a 13,000-word dictionary and a wildcard-bucket BFS hint solver, deployed on Cloudflare Pages.",
+    stack: ["JavaScript", "HTML5", "BFS Algorithm", "Cloudflare Pages"],
+    href: "https://github.com/rajkirankr-beep",
+    size: "md",
   },
 ];
 
 export const socials = [
   { label: "GitHub", href: "https://github.com/rajkirankr-beep" },
   { label: "LinkedIn", href: "https://linkedin.com/" },
-  { label: "Instagram", href: "https://www.instagram.com/ra._.kiran/" }
+  { label: "Instagram", href: "https://www.instagram.com/ra._.kiran/" },
 ];

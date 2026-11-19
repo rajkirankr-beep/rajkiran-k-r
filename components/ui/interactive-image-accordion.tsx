@@ -37,9 +37,9 @@ export function LandingAccordionItem({
             return (
               <div
                 key={project.index}
-                className={`overflow-hidden rounded-2xl border transition-colors duration-200 ${
+                className={`overflow-hidden rounded-xl border transition-colors duration-200 ${
                   isActive
-                    ? "border-accent/60 bg-surface shadow-glow"
+                    ? "border-accent/50 bg-surface"
                     : "border-line bg-surface/80"
                 }`}
               >
@@ -50,8 +50,8 @@ export function LandingAccordionItem({
                   className="flex w-full items-center justify-between gap-3 p-5 text-left"
                 >
                   <div className="flex items-center gap-3">
-                    <span className="font-mono text-xs font-semibold text-accent">
-                      [{project.index}]
+                    <span className="font-mono text-xs font-semibold text-muted">
+                      {project.index}
                     </span>
                     <span className="font-display text-lg font-extrabold text-ink">
                       {project.title}
@@ -86,7 +86,7 @@ export function LandingAccordionItem({
                       {project.stack.map((tech) => (
                         <span
                           key={tech}
-                          className="rounded-full border border-line bg-base/60 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-ink/85"
+                          className="rounded border border-line bg-base/60 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-ink/75"
                         >
                           {tech}
                         </span>
@@ -123,10 +123,8 @@ export function LandingAccordionItem({
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.18, ease: QUIET_EASE }}
               >
-                <div className="mb-3 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-accent-soft">
-                  <span>Project [{activeProject.index}]</span>
-                  <span className="text-line">/</span>
-                  <span className="text-muted">{activeProject.year}</span>
+                <div className="mb-3 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-muted">
+                  <span>{activeProject.year}</span>
                 </div>
 
                 <h3 className="font-display text-4xl font-extrabold leading-[1.06] tracking-tight text-ink xl:text-5xl">
@@ -141,7 +139,7 @@ export function LandingAccordionItem({
                   {activeProject.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-full border border-line bg-surface px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-ink/85"
+                      className="rounded border border-line bg-surface px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-ink/75"
                     >
                       {tech}
                     </span>
@@ -153,7 +151,7 @@ export function LandingAccordionItem({
                     href={activeProject.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-xl bg-ink px-5 py-3 font-mono text-xs font-semibold uppercase tracking-wider text-base transition-colors duration-200 hover:bg-accent hover:text-ink"
+                    className="inline-flex items-center gap-2 rounded-lg bg-ink px-5 py-3 font-mono text-xs font-semibold uppercase tracking-wider text-base transition-colors duration-200 hover:bg-accent hover:text-ink"
                   >
                     <span>Open Project</span>
                     <ArrowUpRight size={15} strokeWidth={2.25} />
@@ -167,7 +165,7 @@ export function LandingAccordionItem({
             </AnimatePresence>
           </div>
 
-          {/* Right 50%: Expanding Cards with Description Restored */}
+          {/* Right 50%: Expanding Cards */}
           <div className="lg:col-span-6">
             <div className="flex h-[420px] w-full flex-row items-stretch gap-3">
               {projects.map((project, index) => {
@@ -187,19 +185,19 @@ export function LandingAccordionItem({
                         setActiveIndex(index);
                       }
                     }}
-                    className={`group relative flex cursor-pointer flex-col justify-between overflow-hidden rounded-2xl border transition-[flex-grow,background-color,border-color] duration-300 ease-out ${
+                    className={`group relative flex cursor-pointer flex-col justify-between overflow-hidden rounded-xl border transition-[flex-grow,background-color,border-color] duration-300 ease-out ${
                       isActive
-                        ? "flex-[4.2] border-accent/70 bg-surface p-6 shadow-glow"
-                        : "flex-[0.85] items-center border-line bg-surface/65 p-3 hover:border-accent/50 hover:bg-surface"
+                        ? "flex-[4.2] border-line bg-surface p-6"
+                        : "flex-[0.85] items-center border-line bg-surface/60 p-3 hover:bg-surface"
                     }`}
                   >
                     {!isActive && (
                       <div
                         aria-hidden="true"
-                        className="pointer-events-none absolute inset-0 opacity-25 transition-opacity duration-200 group-hover:opacity-45"
+                        className="pointer-events-none absolute inset-0 opacity-20 transition-opacity duration-200 group-hover:opacity-35"
                         style={{
                           backgroundImage:
-                            "repeating-linear-gradient(-45deg, transparent, transparent 7px, rgba(255,255,255,0.06) 7px, rgba(255,255,255,0.06) 8px)",
+                            "repeating-linear-gradient(-45deg, transparent, transparent 7px, rgba(255,255,255,0.04) 7px, rgba(255,255,255,0.04) 8px)",
                         }}
                       />
                     )}
@@ -213,8 +211,8 @@ export function LandingAccordionItem({
                         className="relative z-10 flex h-full w-full min-w-[240px] flex-col justify-between"
                       >
                         <div className="flex items-center justify-between">
-                          <span className="font-mono text-xs font-bold text-accent">
-                            [{project.index}]
+                          <span className="font-mono text-xs font-bold text-muted">
+                            {project.index}
                           </span>
                           <a
                             href={project.href}
@@ -244,7 +242,7 @@ export function LandingAccordionItem({
                           {project.stack.map((tech) => (
                             <span
                               key={tech}
-                              className="rounded-full border border-line bg-base/60 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-ink/85"
+                              className="rounded border border-line bg-base/60 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-ink/75"
                             >
                               {tech}
                             </span>
@@ -253,29 +251,21 @@ export function LandingAccordionItem({
                       </motion.div>
                     ) : (
                       <div className="relative z-10 flex h-full w-full flex-col items-center justify-between py-1">
-                        <span className="rounded-md border border-line/80 bg-base/80 px-1.5 py-0.5 font-mono text-[10px] font-bold text-accent-soft transition-colors group-hover:border-accent group-hover:text-accent">
+                        <span className="rounded border border-line/60 bg-base/80 px-1.5 py-0.5 font-mono text-[10px] font-bold text-muted transition-colors group-hover:border-line group-hover:text-ink/60">
                           {project.index}
                         </span>
 
                         <div className="flex flex-1 items-center justify-center">
-                          <span className="whitespace-nowrap font-display text-sm font-black uppercase tracking-widest text-ink/75 -rotate-90 transition-colors duration-200 group-hover:text-ink">
+                          <span className="whitespace-nowrap font-display text-sm font-black uppercase tracking-widest text-ink/50 -rotate-90 transition-colors duration-200 group-hover:text-ink/80">
                             {project.title}
                           </span>
                         </div>
 
-                        <span className="font-mono text-[10px] text-muted transition-colors group-hover:text-accent">
+                        <span className="font-mono text-[10px] text-muted/50 transition-colors group-hover:text-muted">
                           +
                         </span>
                       </div>
                     )}
-
-                    <div
-                      className={`pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full blur-3xl transition-opacity duration-300 ${
-                        isActive
-                          ? "bg-accent/20 opacity-100"
-                          : "bg-accent/10 opacity-0 group-hover:opacity-65"
-                      }`}
-                    />
                   </div>
                 );
               })}

@@ -10,7 +10,7 @@ export default function ProjectShowcase() {
   return (
     <section className="border-b border-line px-6 py-20 md:px-12 md:py-28 lg:px-16">
       <h2 className="mb-10 font-mono text-xs uppercase tracking-[0.25em] text-muted">
-        [ 04 ] — Selected Work
+        Selected Work
       </h2>
 
       <motion.div

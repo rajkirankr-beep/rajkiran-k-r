@@ -11,7 +11,7 @@ export default function Manifesto() {
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
         <div className="lg:col-span-3">
           <span className="font-mono text-xs uppercase tracking-[0.25em] text-muted">
-            [ 02 ] — {manifesto.eyebrow}
+            {manifesto.eyebrow}
           </span>
         </div>
         <motion.div

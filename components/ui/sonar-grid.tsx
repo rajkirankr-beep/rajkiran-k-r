@@ -69,7 +69,7 @@ export function SonarGrid({
     (node: HTMLDivElement | null) => {
       hostRef.current = node
       if (typeof ref === "function") ref(node)
-      else if (ref) ref.current = node
+      else if (ref && typeof ref === "object") (ref as React.MutableRefObject<HTMLDivElement | null>).current = node
     },
     [ref]
   )

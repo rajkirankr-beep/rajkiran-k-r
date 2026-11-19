@@ -20,7 +20,7 @@ export default function CopyEmail({ email }: { email: string }) {
     <button
       type="button"
       onClick={handleCopy}
-      className="group inline-flex items-center gap-3 rounded-full border border-line bg-surface px-5 py-3 font-mono text-sm text-ink transition-colors duration-300 hover:border-accent/60 hover:bg-surface2"
+      className="group inline-flex items-center gap-3 rounded-full border border-line bg-surface px-5 py-3 font-mono text-sm text-ink transition-colors duration-300 hover:border-accent/50 hover:bg-surface2"
       aria-live="polite"
     >
       <span>{email}</span>

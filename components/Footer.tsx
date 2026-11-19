@@ -13,9 +13,9 @@ export default function Footer() {
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
         <div className="lg:col-span-7">
           <span className="font-mono text-xs uppercase tracking-[0.25em] text-muted">
-            [ 05 ] — Contact
+            Contact
           </span>
-          <h2 className="mt-4 text-balance font-display text-4xl font-black uppercase leading-[0.95] text-ink sm:text-5xl md:text-6xl">
+          <h2 className="mt-4 text-balance font-display text-4xl font-black leading-[0.95] text-ink sm:text-5xl md:text-6xl">
             Let&rsquo;s build
             <br />
             something real.
@@ -36,7 +36,7 @@ export default function Footer() {
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-2 rounded-full border border-line bg-surface px-4 py-2.5 font-mono text-xs uppercase tracking-wider text-ink/90 transition-colors duration-300 hover:border-accent/60 hover:text-accent-soft"
+                  className="group flex items-center gap-2 rounded-full border border-line bg-surface px-4 py-2.5 font-mono text-xs uppercase tracking-wider text-ink/80 transition-colors duration-300 hover:border-accent hover:text-accent"
                 >
                   {Icon && <Icon size={14} strokeWidth={2.25} />}
                   {s.label}
