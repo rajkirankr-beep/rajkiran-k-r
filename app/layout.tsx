@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { SonarGrid } from "@/components/ui/sonar-grid";
 import "./globals.css";
 
 const inter = localFont({
@@ -40,6 +41,16 @@ export default function RootLayout({
       className={`${inter.variable} ${jbMono.variable} ${rubik.variable}`}
     >
       <body className="relative min-h-screen bg-base font-display antialiased">
+        <SonarGrid
+          aria-hidden="true"
+          color="#6366f1"
+          spacing={28}
+          dotRadius={1.35}
+          baseOpacity={0.22}
+          pingEvery={2.8}
+          interactive={false}
+          className="pointer-events-none fixed inset-0 z-0 h-screen w-screen"
+        />
         <div className="grain-overlay bg-grain" aria-hidden="true" />
         <div className="relative z-10">{children}</div>
       </body>

@@ -13,7 +13,7 @@ const rubik = localFont({
 /* ══ EDIT THESE ════════════════════════════════════════════════════════ */
 
 /** One string per line. Each line expands to fill the window width. */
-const HERO_LINES: string[] = ["RAJKIRAN.K", "RAJENDRAN"];
+const HERO_LINES: string[] = ["<RAJKIRAN.K", "RAJENDRAN/>"];
 
 /* Theme colors — from tailwind.config.ts & globals.css */
 const BG_COLOR = "#14120f"; // 60% warm-charcoal background
