@@ -79,17 +79,17 @@ export const projects: Project[] = [
     description:
       "Mobile-first web app for IIIT Kottayam combining faculty timetables, campus network context, and crowdsourced student check-ins to track live cabin availability.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
-    href: "https://github.com/rajkirankr-beep",
+    href: "https://github.com/rajkirankr-beep/prof-tracker",
     size: "lg",
   },
   {
     index: "02",
     title: "Lyric Flow",
-    year: "2026",
+    year: "2026", 
     description:
       "Automated Python and Remotion pipeline that clips audio hooks, transcribes word-level timestamps with local Whisper, and renders Spotify-style kinetic lyric videos.",
     stack: ["Python", "React", "Remotion", "OpenAI Whisper"],
-    href: "https://github.com/rajkirankr-beep",
+    href: "https://github.com/rajkirankr-beep/lyric-flow",
     size: "md",
   },
   // {
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     description:
       "Browser extension for bulk-downloading PDFs and lecture decks directly from the IIIT Kottayam LMS using an active authenticated session.",
     stack: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
-    href: "https://github.com/rajkirankr-beep",
+    href: "https://github.com/rajkirankr-beep/lmsprint-extension",
     size: "md",
   },
   {
